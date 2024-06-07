@@ -20,6 +20,6 @@ EXPLICACION
 ### 6. Tabla con Sprint Review 
 
 | Que salio bien? | Que puedo hacer diferente? | Que no salio bien ? |
----------------------------------------------------------------------
+------------------|----------------------------|-----------------------
 | sadfjkdfhsdkjhdjk | sdjkhjdfjksdhdjksjk | sdjklfhjsdajkfh |
 

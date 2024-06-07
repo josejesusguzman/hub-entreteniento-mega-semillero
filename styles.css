@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h5 {
+    color: #343a40;
+}
+
+p {
+    color: #6c757d;
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+}
+
+.img-thumbnail {
+    transition: transform 0.3s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.fade{
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}

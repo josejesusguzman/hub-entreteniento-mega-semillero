@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de entretenimiento</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Inicia</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mb-3" data-id="1">
+            <div class="col-3">
+                <img src="media/placeholder.jpg" alt="Imagen" class="img-thumbnail">
+            </div>
+            <div class="col-9">
+                <h5>Rio 1</h5>
+                <p>Capturado por contrabandistas cuando era apenas una cría, un guacamayo llamado Blu nunca aprendió a volar y vive una vida feliz domesticado en Minnesota con su amiga humana, Linda. Blu se piensa que es el último de su especie, pero cuando escuchan que Jewel, una solitaria hembra, vive en Río de Janeiro, Blu y Linda emprenderán un viaje a su encuentro.
+                </p>
+                <button class="btn btn-primary btn-sm mr-2 ver-btn">Ver</button>
+                <button class="btn btn-secondary btn-sm mr-2 ocultar-btn">Ocultar</button>
+                <button class="btn btn-warning btn-sm fav-btn">Favorito</button>
+            </div>
+        </div>
+        <div class="row mb-3" data-id="2">
+            <div class="col-3">
+                <img src="media/placeholder.jpg" alt="Imagen" class="img-thumbnail">
+            </div>
+            <div class="col-9">
+                <h5>Rio 2</h5>
+                <p>Capturado por contrabandistas cuando era apenas una cría, un guacamayo llamado Blu nunca aprendió a volar y vive una vida feliz domesticado en Minnesota con su amiga humana, Linda. Blu se piensa que es el último de su especie, pero cuando escuchan que Jewel, una solitaria hembra, vive en Río de Janeiro, Blu y Linda emprenderán un viaje a su encuentro.
+                </p>
+                <button class="btn btn-primary btn-sm mr-2 ver-btn">Ver</button>
+                <button class="btn btn-secondary btn-sm mr-2 ocultar-btn">Ocultar</button>
+                <button class="btn btn-warning btn-sm fav-btn">Favorito</button>
+            </div>
+        </div>
+        <div class="row mb-3" data-id="3">
+            <div class="col-3">
+                <img src="media/placeholder.jpg" alt="Imagen" class="img-thumbnail">
+            </div>
+            <div class="col-9">
+                <h5>Rio 3</h5>
+                <p>Capturado por contrabandistas cuando era apenas una cría, un guacamayo llamado Blu nunca aprendió a volar y vive una vida feliz domesticado en Minnesota con su amiga humana, Linda. Blu se piensa que es el último de su especie, pero cuando escuchan que Jewel, una solitaria hembra, vive en Río de Janeiro, Blu y Linda emprenderán un viaje a su encuentro.
+                </p>
+                <button class="btn btn-primary btn-sm mr-2 ver-btn">Ver</button>
+                <button class="btn btn-secondary btn-sm mr-2 ocultar-btn">Ocultar</button>
+                <button class="btn btn-warning btn-sm fav-btn">Favorito</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <button class="btn btn-link" onclick="showSection('generos')">Generos</button>
+                <button class="btn btn-link" onclick="showSection('favoritos')">Favoritos</button>
+                <button class="btn btn-link" onclick="showSection('series')">Series</button>
+                <button class="btn btn-link" onclick="showSection('peliculas')">Peliculas</button>
+                <button class="btn btn-link" onclick="showSection('configuracion')">Configuración</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 d-done" id="favoritos-section">
+        <h2>Favoritos</h2>
+        <div id="favoritos-list"></div>
+        <button class="btn btn-link" onclick="showSection('content')">Volver</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

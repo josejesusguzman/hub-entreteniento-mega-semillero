@@ -1,0 +1,10 @@
+<div class="item">
+    <img [src]="item.image" alt="Item Image" >
+    <div class="details">
+        <h3>{{item.title}}</h3>
+        <p>{{item.description}}</p>
+    </div>
+    <div class="buttons">
+        <button (click)="toggleVisibility()">{{visibility ? 'Ocultar' : 'Ver'}}</button>
+    </div>
+</div>

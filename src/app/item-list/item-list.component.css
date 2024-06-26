@@ -1,0 +1,21 @@
+.item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}

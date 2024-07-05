@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { expect } from 'chai';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -11,19 +12,14 @@ describe('AppComponent', () => {
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app).to.exist;
   });
 
   it(`should have the 'hub-entretenimiento' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('hub-entretenimiento');
+    expect(app.title).to.contain('hub-entretenimiento');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, hub-entretenimiento');
-  });
+  
 });

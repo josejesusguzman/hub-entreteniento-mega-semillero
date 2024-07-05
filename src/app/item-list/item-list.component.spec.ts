@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { expect } from 'chai';
 import { ItemListComponent } from './item-list.component';
 
 describe('ItemListComponent', () => {
@@ -18,6 +18,6 @@ describe('ItemListComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.exist;
   });
 });

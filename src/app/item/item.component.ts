@@ -1,5 +1,10 @@
 import { Component, Input } from '@angular/core';
 
+export interface Item {
+  image: string;
+  title: string;
+  description: string;
+}
 @Component({
   selector: 'app-item',
   standalone: true,
@@ -14,5 +19,9 @@ export class ItemComponent {
 
   toggleVisibility() {
     this.visibility = !this.visibility;
+  }
+
+  saveFavs(id: number) {
+    return id;
   }
 }

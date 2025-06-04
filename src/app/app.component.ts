@@ -8,7 +8,7 @@ import { ItemComponent } from './item/item.component';
   standalone: true,
   imports: [RouterOutlet, ItemComponent, ItemListComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'hub-entretenimiento';

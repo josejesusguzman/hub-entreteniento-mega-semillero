@@ -10,7 +10,7 @@ export interface Item {
   standalone: true,
   imports: [],
   templateUrl: './item.component.html',
-  styleUrl: './item.component.css'
+  styleUrls: ['./item.component.css']
 })
 export class ItemComponent {
   @Input() item: any;
